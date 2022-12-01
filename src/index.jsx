@@ -4,7 +4,7 @@ import reactRouter from "react-router-dom";
 import App from "./App";
 import './styles/compiled/index.css';
 
-// Insérer le router react
+// WIP : Insérer le router react quelque part
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
