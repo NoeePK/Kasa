@@ -8,8 +8,11 @@ import Lodgings from "./pages/Lodgings";
 // WIP : fonction App()
 
 // function App() {
-//     return ()}
+//     return (
+    // Header
+    // Pages
+    // Footer 
+// )}
 //
 
-// export App;
-
+// export default App;
