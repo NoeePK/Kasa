@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom';
 
 export function Navigation() {
     return (
-        <Nav>
+        <nav>
             <Link to="/">Accueil</Link>
             <Link to="/About">A propos</Link>
-        </Nav>
+        </nav>
     )
 }
 

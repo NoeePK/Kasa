@@ -4,10 +4,10 @@ import logo from "../assets/logo.svg"
 export default function Header() {
     return (
         <Header className="header-container">
-            <Figure className="headerLogo">
+            <figure className="headerLogo">
                 <img className="logo" src={logo} alt="Logo de l'agence Kasa">
                 </img>
-            </Figure>
+            </figure>
             <Navigation />
         </Header>
     )

@@ -16,24 +16,26 @@ function App() {
     return (
         <div className="App">
             <Header />
-            <Main>
+            <main>
                 <Routes>
-                    <Switch>
-                        <Route exact path="/">
-                            <Home />
-                        </Route>
-                        <Route path="/About">
-                            <About />
-                        </Route>
-                        <Route path="/Lodgings">
-                            <Lodgings />
-                        </Route>
-                        <Route>
-                            <Error />
-                        </Route>
-                    </Switch>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
+                    <Route path="/About">
+                        <About />
+                    </Route>
+                    <Route path="/Lodgings">
+                        <Lodgings />
+                    </Route>
+                    <Route path="*">
+                        <Error />
+                    </Route>
+                    <Route path="/*">
+                        <Error />
+                    </Route>
+
                 </Routes>
-            </Main>
+            </main>
             <Footer />
         </div>
     );
