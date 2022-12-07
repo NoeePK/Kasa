@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Composants permanents
 import Header from "./components/Header";
@@ -11,21 +11,23 @@ import Error from "./pages/Error";
 import About from "./pages/About";
 import Lodgings from "./pages/Lodgings";
 
+// Style
+import './styles/compiled/index.css';
 
 function App() {
     return (
-        <div className="App">
+        <div className="App-container">
+        <Router>
             <Header />
-            <main>
-                <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route path="/About" element={<About />} />
-                    <Route path="/Lodgings" element={<Lodgings />} />
-                    <Route path="*"element={<Error />} />
-                    <Route path="/*"element={<Error />} />
-                </Routes>
-            </main>
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/About" element={<About />} />
+                <Route path="/Lodgings" element={<Lodgings />} />
+                <Route path="*" element={<Error />} />
+                <Route path="/*" element={<Error />} />
+            </Routes>
             <Footer />
+        </Router>
         </div>
     );
 }
