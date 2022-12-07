@@ -1,18 +1,42 @@
-// Importer les routes
+import React from 'react';
+import { Routes, Route } from "react-router-dom";
 
-// WIP : Importer les pages du dossier "pages"
+// Composants permanents
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer";
+
+// Différentes pages
 import Home from "./pages/Home";
-import ErrorPage from "./pages/ErrorPage";
+import Error from "./pages/Error";
+import About from "./pages/About";
 import Lodgings from "./pages/Lodgings";
 
-// WIP : fonction App()
 
-// function App() {
-//     return (
-    // Header
-    // Pages
-    // Footer 
-// )}
-//
+function App() {
+    return (
+        <div className="App">
+            <Header />
+            <Main>
+                <Routes>
+                    <Switch>
+                        <Route exact path="/">
+                            <Home />
+                        </Route>
+                        <Route path="/About">
+                            <About />
+                        </Route>
+                        <Route path="/Lodgings">
+                            <Lodgings />
+                        </Route>
+                        <Route>
+                            <Error />
+                        </Route>
+                    </Switch>
+                </Routes>
+            </Main>
+            <Footer />
+        </div>
+    );
+}
 
-// export default App;
+export default App;
