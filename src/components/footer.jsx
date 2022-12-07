@@ -3,7 +3,7 @@ import logo from "../assets/logo-footer.svg";
 
 export function Footer() {
     return (
-        <Footer className="footer-container">
+        <Footer>
             <Figure className="footerLogo">
                 <img className="logo" src={logo} alt="Logo de l'agence Kasa">
                 </img>
@@ -14,3 +14,5 @@ export function Footer() {
         </Footer>
     )
 }
+
+export default Footer;
