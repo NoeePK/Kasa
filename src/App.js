@@ -18,22 +18,11 @@ function App() {
             <Header />
             <main>
                 <Routes>
-                    <Route exact path="/">
-                        <Home />
-                    </Route>
-                    <Route path="/About">
-                        <About />
-                    </Route>
-                    <Route path="/Lodgings">
-                        <Lodgings />
-                    </Route>
-                    <Route path="*">
-                        <Error />
-                    </Route>
-                    <Route path="/*">
-                        <Error />
-                    </Route>
-
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/About" element={<About />} />
+                    <Route path="/Lodgings" element={<Lodgings />} />
+                    <Route path="*"element={<Error />} />
+                    <Route path="/*"element={<Error />} />
                 </Routes>
             </main>
             <Footer />
