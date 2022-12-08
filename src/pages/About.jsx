@@ -1,10 +1,13 @@
-// Import Banner
 // Refactoriser : utiliser map pour le contenu des collapse ?
+
+// Importer les composants
+import Banner from "../components/Banner";
+import Collapse from "../components/Collapse";
 
 export function About() {
     return (
-        // Banner 
         <section className="about-container">
+            <Banner />
             <article className="about-articles">
                 <h3 className="about-titles">
                     Fiabilité
@@ -39,4 +42,6 @@ export function About() {
             </article>
         </section>
     )
-}
+};
+
+export default About;

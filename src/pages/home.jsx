@@ -1,23 +1,15 @@
-import logo from '../assets/logo.svg';
-import '../styles/compiled/index.css';
+// Importer les composants
+import Banner from "../components/Banner";
+import Location from "../components/Location";
 
 function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Courage !</h1>
-        <h2>Tu peux le faire !</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <div className="banner-container">
+        <Banner />
+      </div>
+      <Location />
+    </section>
   );
 }
 

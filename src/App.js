@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import About from "./pages/About";
-import Lodgings from "./pages/Lodgings";
+import Location from "./pages/Location";
 
 // Style
 import './styles/compiled/index.css';
@@ -22,7 +22,7 @@ function App() {
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/About" element={<About />} />
-                <Route path="/Lodgings" element={<Lodgings />} />
+                <Route path="/Location" element={<Location />} />
                 <Route path="*" element={<Error />} />
                 <Route path="/*" element={<Error />} />
             </Routes>
