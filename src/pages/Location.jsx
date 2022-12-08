@@ -5,3 +5,8 @@ import Location from "../components/Location";
 import Rate from "../components/Rate";
 import Tag from "../components/Tag";
 
+export function Locations() {
+
+}
+
+export default Locations;

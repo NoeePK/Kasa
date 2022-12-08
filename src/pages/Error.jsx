@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 export function Error() {
     return (
         <section className="errorPage-container">
