@@ -1,14 +1,16 @@
+import React from "react";
+
 // Importer les composants
 import Banner from "../components/Banner";
-import Location from "../components/Rental";
+import Rental from "../components/Rental";
 
-function Home() {
+export function Home() {
   return (
     <section>
       <div className="banner-container">
         <Banner />
       </div>
-      <Location />
+      <Rental />
     </section>
   );
 }
