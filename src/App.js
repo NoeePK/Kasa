@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Composants permanents
@@ -9,25 +9,21 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 import About from "./pages/About";
-import Location from "./pages/Location";
-
-
+import Rental from "./pages/Rental";
 
 function App() {
     return (
-        <div className="App-container">
         <Router>
             <Header />
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/About" element={<About />} />
-                <Route path="/Location" element={<Location />} />
+                <Route path="/Rental/:id" element={<Rental />} />
                 <Route path="*" element={<Error />} />
                 <Route path="/*" element={<Error />} />
             </Routes>
             <Footer />
         </Router>
-        </div>
     );
 }
 

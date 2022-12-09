@@ -1,6 +1,6 @@
 // Importer les composants
 import Banner from "../components/Banner";
-import Location from "../components/Location";
+import Location from "../components/Rental";
 
 function Home() {
   return (
