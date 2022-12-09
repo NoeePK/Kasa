@@ -15,13 +15,15 @@ function App() {
     return (
         <Router>
             <Header />
-            <Routes>
-                <Route exact path="/" element={<Home />} />
-                <Route exact path="/About" element={<About />} />
-                <Route path="/Rental/:id" element={<Rental />} />
-                <Route path="*" element={<Error />} />
-                <Route path="/*" element={<Error />} />
-            </Routes>
+            <main>
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/About" element={<About />} />
+                    <Route path="/Rental/:id" element={<Rental />} />
+                    <Route path="*" element={<Error />} />
+                    <Route path="/*" element={<Error />} />
+                </Routes>
+            </main>
             <Footer />
         </Router>
     );
