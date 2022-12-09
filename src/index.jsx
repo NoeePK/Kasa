@@ -1,8 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./styles/compiled/index.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// Style applicable à toute l'application
+import "./styles/compiled/index.css";
 
 // Composants permanents
 import Header from "./components/Header";
@@ -19,17 +20,12 @@ root.render(
     <React.StrictMode>
         <Router>
             <Header />
-            <main>
-                <Routes>
-                    <Switch>
-                        <Route exact path="/" component={Home} />
-                        <Route exact path="/About" component={About} />
-                        <Route path="/Rental/:id" component={Rental} />
-                        <Route path="*" component={Error} />
-                        <Route path="/*" component={Error} />
-                    </Switch>
-                </Routes>
-            </main>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/About" component={About} />
+                <Route path="/Rental/:id" component={Rental} />
+                <Route path="*" component={Error} />
+            </Switch>
             <Footer />
         </Router>
     </React.StrictMode>

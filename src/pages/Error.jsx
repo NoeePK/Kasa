@@ -1,22 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import image from "../assets/logo-error.svg";
 
 export function Error() {
     return (
-        <section className="errorPage-container">
-            <h1 className="errorNumber">
-                404
-            </h1>
-            <h2 className="errorExplained">
+        <section className="error-container">
+            <img src={image} alt="404" className="error-logo" />
+            <h1 className="error-text">
                 Oups ! La page que vous demandez n'existe pas.
-            </h2>
-            <Link to="/">
+            </h1>
+            <Link to="/" className="to-home-link">
                 Retourner sur la page d'accueil
             </Link>
-
         </section>
-
     );
-};
+}
 
 export default Error;
