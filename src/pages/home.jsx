@@ -1,9 +1,8 @@
 import React from "react";
 
 // Importer les composants
-import Banner from "../components/Banner";
 import Card from "../components/Card";
-import image from "..assets/home-background.png";
+import image from "../assets/home-background.png";
 
 export function Home() {
     return (
