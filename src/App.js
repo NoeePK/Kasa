@@ -11,8 +11,7 @@ import Error from "./pages/Error";
 import About from "./pages/About";
 import Location from "./pages/Location";
 
-// Style
-import './styles/compiled/index.css';
+
 
 function App() {
     return (
