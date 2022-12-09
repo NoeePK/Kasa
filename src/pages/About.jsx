@@ -1,5 +1,3 @@
-// Refactoriser : utiliser map pour le contenu des collapse ?
-
 // Importer les composants
 import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
@@ -16,9 +14,11 @@ export function About() {
                     {AboutText.map((titles) => (
                         <h3 className="about-titles">{titles.title}</h3>
                     ))}
+                    {/*Collapse ici ? Ou avant ? */}
                     {AboutText.map((texts) => (
                         <p>{texts.text}</p>
                     ))}
+
                 </article>
             ))}
         </section>
