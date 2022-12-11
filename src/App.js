@@ -1,8 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-// Style applicable à toute l'application
-import "./styles/compiled/index.css";
+import { Routes, Route } from "react-router-dom";
 
 // Composants permanents
 import Header from "./components/Header";
@@ -16,21 +13,18 @@ import Rental from "./pages/Rental";
 
 function App() {
     return (
-        <div className="App-container">
+        <div className="App">
             <Header />
-            {/* <Router> */}
-            {/* <div> */}
-                <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route path="/About" element={<About />} />
-                    <Route path="/Rental/:id" element={<Rental />} />
-                    <Route path="*" element={<Error />} />
-                </Routes>
-            {/* </div> */}
-            {/* </Router> */}
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/About" element={<About />} />
+                <Route path="/Rental/:id" element={<Rental />} />
+                <Route path="*" element={<Error />} />
+            </Routes>
             <Footer />
         </div>
     );
 }
+
 
 export default App;
