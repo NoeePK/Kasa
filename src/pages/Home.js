@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Importer les composants
 import Card from "../components/Card";
 import image from "../assets/home-background.png";
+import Rentals from "../datas/Rentals.json";
 
 export function Home() {
     return (
@@ -11,10 +13,18 @@ export function Home() {
                 <h1>Chez vous, partout et ailleurs</h1>
                 <img src={image} alt="" className="home-banner" />
             </div>
-
-            <article className="gallery">
-                {/* <Card /> */}
-            </article>
+            <div className="cards-container">
+                {Rentals.map((rental, id) => (
+                    <article className="card-container" key={id}>
+                        <Link
+                            className="toRental-link"
+                            to={`/Rental/${rental.id}`}
+                        >
+                            <Card cover={rental.cover} title={rental.title} />
+                        </Link>
+                    </article>
+                ))}
+            </div>
         </section>
     );
 }

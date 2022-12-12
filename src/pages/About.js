@@ -3,32 +3,29 @@ import React from "react";
 // Importer les composants/contenu
 import Collapse from "../components/Collapse";
 import image from "../assets/about-background.png";
-import { AboutText } from "../datas/About";
+import AboutContent from "../datas/About.json";
 
-export function About() {
+export default function About() {
     return (
         <section className="about-container">
             {/* Bannière */}
             <div className="banner-container">
                 <img src={image} alt="" className="about-banner" />
             </div>
-            
+
             {/* Contenu */}
-            <div className="collapse-container">
-                    {/*Collapse ici. Ou après ? */}
-                    <article className="about-articles">
-                        {AboutText.map((titles) => (
-                            <h3 className="about-titles">{titles.title}</h3>
-                        ))}
-                        
-                        {AboutText.map((texts) => (
-                            <p>{texts.text}</p>
-                        ))}
+            <div className="content-container">
+                {AboutContent.map((id, array) => (
+                    <article className="collapse-container">
+                        <Collapse
+                            className="collapse"
+                            key={id}
+                            title={array.title}
+                            text={array.text}
+                        />
                     </article>
-                
+                ))}
             </div>
         </section>
     );
 }
-
-export default About;

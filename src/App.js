@@ -7,9 +7,9 @@ import Footer from "./components/Footer";
 
 // Différentes pages
 import Home from "./pages/Home";
-import Error from "./pages/Error";
 import About from "./pages/About";
 import Rental from "./pages/Rental";
+import Error from "./pages/Error";
 
 function App() {
     return (
