@@ -1,4 +1,6 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import Rentals from "../datas/Rentals.json";
 
 // Importer les composants
 import Carrousel from "../components/Carrousel";
@@ -6,12 +8,13 @@ import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
 import Tags from "../components/Tags";
 
-import Rentals from "../datas/Rentals.json";
-
 export function Rental() {
     // Récupérer les infos logement dans datas
-    // .find ou .map ??
-    const rental = Rentals
+
+    // Récupérer id dans URL
+    const params = useParams();
+    // Récupérer logement associé à l'id
+    const Rental = Rentals.find((rental) => rental.id === params.id);
 
     return (
         <section className="rental-container">
