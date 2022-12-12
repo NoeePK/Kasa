@@ -13,7 +13,7 @@ export function Home() {
                 <h1>Chez vous, partout et ailleurs</h1>
                 <img src={image} alt="" className="home-banner" />
             </div>
-            <div className="cards-container">
+            {/* <div className="cards-container">
                 {Rentals.map((rental, id) => (
                     <article className="card-container" key={id}>
                         <Link
@@ -24,7 +24,7 @@ export function Home() {
                         </Link>
                     </article>
                 ))}
-            </div>
+            </div> */}
         </section>
     );
 }
