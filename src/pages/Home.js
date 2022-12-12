@@ -13,7 +13,7 @@ export function Home() {
             </div>
 
             <article className="gallery">
-                <Card />
+                {/* <Card /> */}
             </article>
         </section>
     );

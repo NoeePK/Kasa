@@ -3,7 +3,7 @@ import logo from "../assets/logo-footer.svg";
 
 export function Footer() {
     return (
-        <Footer>
+        <footer>
             <figure className="footerLogo">
                 <img className="logo" src={logo} alt="Logo de l'agence Kasa">
                 </img>
@@ -11,7 +11,7 @@ export function Footer() {
             <p className="footerCopyrights">
                 2020 Kasa. All rights reserved
             </p>
-        </Footer>
+        </footer>
     )
 }
 
