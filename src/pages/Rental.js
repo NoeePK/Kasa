@@ -39,12 +39,17 @@ export function Rental() {
             </div>
 
             <div className="rental-details">
-                <Collapse title="Description" text={Rental.description} />
+                <Collapse
+                    className="details"
+                    title="Description"
+                    text={Rental.description}
+                />
                 {/* Mettre sous forme de liste !! */}
                 <Collapse
+                    className="details"
                     title="Equipements"
                     text=<ul>
-                        {Rental.equipments.map((equipment, index) => (
+                        {Rental.equipments.map((index, equipment) => (
                             <li key={index}>{equipment}</li>
                         ))}
                     </ul>
