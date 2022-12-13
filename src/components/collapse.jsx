@@ -1,6 +1,6 @@
 import React from "react";
-import arrow_down from "../assets/arrow_down.svg";
-import arrow_up from "../assets/arrow_up.svg";
+import arrow_down from "../assets/arrow-down.svg";
+import arrow_up from "../assets/arrow-up.svg";
 
 // Utiliser les props ?
 
