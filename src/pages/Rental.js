@@ -21,7 +21,6 @@ export function Rental() {
     return (
         <section className="rental-container">
             <Carrousel />
-
             <div className="rental-title">
                 <h1>{Rental.title}</h1>
                 <h2>{Rental.location}</h2>
