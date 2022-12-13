@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import Rentals from "../datas/Rentals.json";
+import Rentals from "../datas/Rentals";
 
 // Importer les composants
 import Carrousel from "../components/Carrousel";
@@ -41,7 +41,14 @@ export function Rental() {
             <div className="rental-details">
                 <Collapse title="Description" text={Rental.description} />
                 {/* Mettre sous forme de liste !! */}
-                <Collapse title="Equipements" text={Rental.equipments} />
+                <Collapse
+                    title="Equipements"
+                    text=<ul>
+                        {Rental.equipments.map((equipment, index) => (
+                            <li key={index}>{equipment}</li>
+                        ))}
+                    </ul>
+                />
             </div>
         </section>
     );

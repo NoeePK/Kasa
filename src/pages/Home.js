@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // Importer les composants
 import Card from "../components/Card";
 import image from "../assets/home-background.png";
-import Rentals from "../datas/Rentals.json";
+import Rentals from "../datas/Rentals";
 
 export function Home() {
     return (
