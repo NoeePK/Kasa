@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import Rentals from "../datas/Rentals";
 
 // Importer les composants
+import Error from "../pages/Error";
 import Carrousel from "../components/Carrousel";
 import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
@@ -10,11 +11,12 @@ import Tags from "../components/Tags";
 
 export function Rental() {
     // Récupérer les infos logement dans datas
-
     // Récupérer id dans URL
     const params = useParams();
     // Récupérer logement associé à l'id
     const Rental = Rentals.find((rental) => rental.id === params.id);
+
+    if (!Rental) return <Error />;
 
     return (
         <section className="rental-container">
@@ -27,7 +29,11 @@ export function Rental() {
 
             <div className="rental-host">
                 <h2 className="host-name">{Rental.host.name}</h2>
-                <img src={Rental.host.picture} alt="" />
+                <img
+                    className="host-picture"
+                    src={Rental.host.picture}
+                    alt="Photo du propriétaire"
+                />
             </div>
 
             <div className="rental-tags">
@@ -35,7 +41,7 @@ export function Rental() {
             </div>
 
             <div className="rental-rating">
-                <Rate />
+                <Rate value={Rental.rating} />
             </div>
 
             <div className="rental-details">
@@ -44,7 +50,7 @@ export function Rental() {
                     title="Description"
                     text={Rental.description}
                 />
-                {/* Mettre sous forme de liste !! */}
+                {/* Vérifier si affichage liste fonctionne */}
                 <Collapse
                     className="details"
                     title="Equipements"
