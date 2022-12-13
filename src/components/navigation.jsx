@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export function Navigation() {
     return (
@@ -7,7 +7,7 @@ export function Navigation() {
             <Link to="/">Accueil</Link>
             <Link to="/About">A propos</Link>
         </nav>
-    )
+    );
 }
 
 export default Navigation;
