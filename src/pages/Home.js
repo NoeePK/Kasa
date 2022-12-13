@@ -13,18 +13,9 @@ export function Home() {
                 <h1>Chez vous, partout et ailleurs</h1>
                 <img src={image} alt="" className="home-banner" />
             </div>
-            {/* <div className="cards-container">
-                {Rentals.map((rental, id) => (
-                    <article className="card-container" key={id}>
-                        <Link
-                            className="to-rental-link"
-                            to={`/Rental/${rental.id}`}
-                        >
-                            <Card cover={rental.cover} title={rental.title} />
-                        </Link>
-                    </article>
-                ))}
-            </div> */}
+            <div className="cards-container">
+                
+            </div>
         </section>
     );
 }
