@@ -12,7 +12,7 @@ export function Card() {
                     key={rental.id}
                 >
                     <figure>
-                        <img src={rental.cover} alt="Photo du logement" />
+                        <img src={rental.cover} alt={`Photo de {rental.title}`} />
                         <figcaption>{rental.title}</figcaption>
                     </figure>
                 </Link>
