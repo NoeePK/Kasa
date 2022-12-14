@@ -1,25 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  width: 95%;
-  margin: 5% auto;
-}
+/* Error: Can't find stylesheet to import.
+ *   ,
+ * 3 | @import"base/general-rules";
+ *   |        ^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   src\styles\index.scss 3:8  root stylesheet */
 
-body {
-  background-color: #E5E5E5;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a   \2577 \a 3 \2502  @import\"base/general-rules\";\d\a   \2502         ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   src\\styles\\index.scss 3:8  root stylesheet";
 }
-
-:root {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
-nav Link {
-  color: #FF6060;
-}
-
-/*# sourceMappingURL=index.css.map */
