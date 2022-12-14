@@ -19,8 +19,8 @@ export function Rental() {
     if (!Rental) return <Error />;
 
     return (
-        <section className="rental-container">
-            <Carrousel />
+        <section className="rental-container" key={params.id}>
+            <Carrousel slides={Rental.pictures}/>
             <div className="rental-title">
                 <h1>{Rental.title}</h1>
                 <h2>{Rental.location}</h2>
