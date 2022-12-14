@@ -5,9 +5,9 @@ import React from "react";
 export function Tags(tags) {
     return (
         <ul className="tags">
-            {tags.map((index, tag) => (
+            {/* {tags.map((index, tag) => (
                 <li key={index}>{tag}</li>
-            ))}
+            ))} */}
         </ul>
     );
 }

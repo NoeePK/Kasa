@@ -10,7 +10,7 @@ export default function About() {
         <section className="about-container">
             {/* Bannière */}
             <div className="banner-container">
-                <img src={image} alt="" className="about-banner" />
+                <img src={image} alt="Paysage" className="about-banner" />
             </div>
 
             {/* Contenu */}
@@ -18,8 +18,8 @@ export default function About() {
                 {AboutContent.map((id, array) => (
                     <article className="collapse-container">
                         <Collapse
+                        key={id}
                             className="collapse"
-                            key={id}
                             title={array.title}
                             text={array.text}
                         />

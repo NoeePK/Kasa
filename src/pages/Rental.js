@@ -19,8 +19,8 @@ export function Rental() {
     if (!Rental) return <Error />;
 
     return (
-        <section className="rental-container" key={params.id}>
-            <Carrousel slides={Rental.pictures}/>
+        <section className="rental-container" key={Rental.id}>
+            <Carrousel slides={Rental.pictures} />
             <div className="rental-title">
                 <h1>{Rental.title}</h1>
                 <h2>{Rental.location}</h2>
@@ -36,7 +36,8 @@ export function Rental() {
             </div>
 
             <div className="rental-tags">
-                <Tags tags={Rental.tags} />
+                <Tags />
+                {/* tags={Rental.tags} */}
             </div>
 
             <div className="rental-rating">
