@@ -10,9 +10,12 @@ body {
   background-color: #E5E5E5;
 }
 
+:root {
+  font-size: 62.5%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 2em;
 }
 
 nav Link {
