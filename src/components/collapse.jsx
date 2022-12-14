@@ -5,7 +5,10 @@ import arrow_up from "../assets/arrow-up.svg";
 // Utiliser les props ?
 
 export function Collapse() {
-    return <div></div>;
+    return <div>
+
+        
+    </div>;
 }
 
 export default Collapse;
