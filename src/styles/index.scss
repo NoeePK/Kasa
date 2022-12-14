@@ -1,6 +1,6 @@
+@import"utils/settings";
 @import"utils/variables";
 @import"utils/mixins";
-@import"settings";
 @import"components/banners";
 @import"components/buttons";
 @import"components/cards";
@@ -10,4 +10,4 @@
 @import"layout/navigation";
 @import"pages/home";
 @import"pages/rental";
-@import"pages/errorPage";
+@import"pages/error";
