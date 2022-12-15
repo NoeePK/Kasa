@@ -18,8 +18,7 @@ export default function About() {
                 {AboutContent.map((id, array) => (
                     <article className="collapse-container">
                         <Collapse
-                        key={id}
-                            className="collapse"
+                            key={id}
                             title={array.title}
                             text={array.text}
                         />

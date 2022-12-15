@@ -8,8 +8,8 @@ export function Rate(value) {
     return (
     <div className="rate">
 {/* f = value, e = 5 - value */}
-{/* iconFull x f 
-    iconEmpty x e
+{/* afficher iconFull x f 
+    afficher iconEmpty x e
 */}
 
 
