@@ -14,13 +14,12 @@ export default function About() {
 
             <div className="content-container">
                 {AboutContent.map((index, array) => (
-                    <article className="collapse-container">
-                        <Collapse
-                            key={index}
-                            title={array.title}
-                            text={array.text}
-                        />
-                    </article>
+                    <Collapse
+                        className="collapse-container"
+                        key={index}
+                        title={array.title}
+                        text={array.text}
+                    />
                 ))}
             </div>
         </section>
