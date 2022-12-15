@@ -5,7 +5,15 @@ import iconEmpty from "../assets/empty-star.svg";
 // Utiliser une condition ?
 
 export function Rate(value) {
-    return <div className="rate"></div>;
+    return (
+    <div className="rate">
+{/* f = value, e = 5 - value */}
+{/* iconFull x f 
+    iconEmpty x e
+*/}
+
+
+    </div>)
 }
 
 export default Rate;
