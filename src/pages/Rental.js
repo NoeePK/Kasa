@@ -21,6 +21,7 @@ export function Rental() {
     return (
         <section className="rental-container" key={Rental.id}>
             <Carrousel slides={Rental.pictures} />
+            
             <div className="rental-title">
                 <h1>{Rental.title}</h1>
                 <h2>{Rental.location}</h2>
@@ -41,7 +42,7 @@ export function Rental() {
             </div>
 
             <div className="rental-rating">
-                <Rate value={Rental.rating} />
+                <Rate rate={Rental.rating} />
             </div>
 
             <div className="rental-details">
@@ -52,13 +53,14 @@ export function Rental() {
                 />
                 {/* Vérifier si affichage liste fonctionne */}
                 <Collapse
-                    className="details"
+                    className="details equiment"
                     title="Equipements"
-                    text=<ul>
-                        {Rental.equipments.map((index, equipment) => (
-                            <li key={index}>{equipment}</li>
-                        ))}
-                    </ul>
+                    text={Rental.equipments}
+                    // <ul>
+                    //     {Rental.equipments.map((index, equipment) => (
+                    //         <li key={index}>{equipment}</li>
+                    //     ))}
+                    // </ul>
                 />
             </div>
         </section>
