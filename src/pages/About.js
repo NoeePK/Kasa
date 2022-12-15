@@ -8,17 +8,15 @@ import AboutContent from "../datas/About.json";
 export default function About() {
     return (
         <section className="about-container">
-            {/* Bannière */}
             <div className="banner-container">
                 <img src={image} alt="Paysage" className="about-banner" />
             </div>
 
-            {/* Contenu */}
             <div className="content-container">
-                {AboutContent.map((id, array) => (
+                {AboutContent.map((index, array) => (
                     <article className="collapse-container">
                         <Collapse
-                            key={id}
+                            key={index}
                             title={array.title}
                             text={array.text}
                         />
