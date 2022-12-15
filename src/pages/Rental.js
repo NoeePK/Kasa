@@ -21,7 +21,7 @@ export function Rental() {
     return (
         <section className="rental-container" key={Rental.id}>
             <Carrousel slides={Rental.pictures} />
-            
+
             <div className="rental-title">
                 <h1>{Rental.title}</h1>
                 <h2>{Rental.location}</h2>
@@ -32,7 +32,7 @@ export function Rental() {
                 <img
                     className="host-picture"
                     src={Rental.host.picture}
-                    alt="Photo du propriétaire"
+                    alt="Propriétaire"
                 />
             </div>
 
