@@ -3,7 +3,7 @@ import left from "../assets/arrow-left.svg";
 import right from "../assets/arrow-right.svg";
 
 function Carrousel(props) {
-    const pictures = props.slides;
+    const pictures = props.source;
     const length = props.slidesNumber;
     // Définir l'index de la première slide
     const [current, setCurrent] = useState(0);
@@ -30,11 +30,13 @@ function Carrousel(props) {
             <span className="arrow-right" onClick={nextSlide}>
                 <img src={right} alt="next"></img>
             </span>
-            {pictures.map((index, picture) => (
-                <div key={index}>
-                    {index === current && <img src={picture} alt=""></img>}
-                </div>
-            ))}{" "}
+            <>
+                {pictures.map((picture, index) => (
+                    <div key={index} className={index}>
+                        {index === current && <img src={picture} alt="" />}
+                    </div>
+                ))}{" "}
+            </>
         </section>
     );
 }

@@ -20,7 +20,7 @@ export function Rental() {
 
     return (
         <section className="rental-container" key={Rental.id}>
-            <Carrousel slides={Rental.pictures} slidesNumber={Rental.pictures.length} />
+            <Carrousel source={Rental.pictures} slidesNumber={Rental.pictures.length} />
 
             <div className="rental-title">
                 <h1>{Rental.title}</h1>
