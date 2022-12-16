@@ -23,7 +23,7 @@ export default function Collapse(props) {
                 </div>
                 {/* SI fermé, ALORS aria est caché */}
                 <div className="collapse-text">
-                    <p hidden={toggleIsClosed ? true : false}>
+                    <p hidden={toggleIsClosed ? false : true}>
                         {props.text}
                     </p>
                 </div>
