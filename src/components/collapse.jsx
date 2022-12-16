@@ -11,11 +11,11 @@ export default function Collapse(props) {
 
     return (
         <>
-        {}
+            {}
             <div className="collapse">
                 <div className="collapse-title" onClick={toggleIsOpen}>
                     <h2>{props.title}</h2>
-                    {/* Utiliser style pour ajouter chevrons selon la classe */}
+                    {/* Utiliser style pour changer chevrons selon la classe */}
                     <span
                         className={
                             toggleIsClosed ? "arrow_down" : "arrow_up"
@@ -23,9 +23,7 @@ export default function Collapse(props) {
                 </div>
                 {/* SI fermé, ALORS aria est caché */}
                 <div className="collapse-text">
-                    <p hidden={toggleIsClosed ? false : true}>
-                        {props.text}
-                    </p>
+                    <p hidden={toggleIsClosed ? false : true}>{props.text}</p>
                 </div>
             </div>
         </>

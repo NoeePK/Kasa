@@ -10,12 +10,12 @@ import Rate from "../components/Rate";
 import Tags from "../components/Tags";
 
 export function Rental() {
-    // Récupérer les infos logement dans datas
     // Récupérer id dans URL
     const params = useParams();
     // Récupérer logement associé à l'id
     const Rental = Rentals.find((rental) => rental.id === params.id);
 
+    // SI l'id ne correspond à rien, ALORS page d'erreur
     if (!Rental) return <Error />;
 
     return (
@@ -37,11 +37,11 @@ export function Rental() {
             </div>
 
             <div className="rental-tags">
-                <Tags />
-                {/* tags={Rental.tags} */}
+                <Tags tags={Rental.tags}/>
+                
             </div>
 
-{/* voir si NaN est toujours dans console */}
+            {/* voir si NaN est toujours dans console */}
             <div className="rental-rating">
                 <Rate value={Number(Rental.rating)} />
             </div>
