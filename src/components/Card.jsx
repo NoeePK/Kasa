@@ -4,7 +4,7 @@ import Rentals from "../datas/Rentals";
 
 export function Card() {
     return (
-        <article className="card-container">
+        <>
             {Rentals.map((rental) => (
                 <Link
                     className="to-rental-link"
@@ -17,7 +17,7 @@ export function Card() {
                     </figure>
                 </Link>
             ))}
-        </article>
+        </>
     );
 }
 
