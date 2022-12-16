@@ -1,15 +1,16 @@
 import React from "react";
 
 // Importer les composants/contenu
+import Banner from "../components/Banner";
 import Collapse from "../components/Collapse";
-import image from "../assets/about-background.png";
+import aboutBanner from "../assets/about-background.png";
 import AboutContent from "../datas/About.json";
 
 export default function About() {
     return (
         <section className="about-container">
             <div className="banner-container">
-                <img src={image} alt="Paysage" className="about-banner" />
+                <Banner source={aboutBanner} text={""} />
             </div>
 
             <div className="content-container">
