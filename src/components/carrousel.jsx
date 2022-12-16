@@ -25,10 +25,10 @@ function Carrousel(props) {
     return (
         <section className="carrousel-container">
             <span className="arrow-left" onClick={previousSlide}>
-                <img src={left} alt="previous"></img>
+                <img src={left} alt="previous"/>
             </span>
             <span className="arrow-right" onClick={nextSlide}>
-                <img src={right} alt="next"></img>
+                <img src={right} alt="next"/>
             </span>
             <>
                 {pictures.map((picture, index) => (
