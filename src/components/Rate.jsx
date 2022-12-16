@@ -6,7 +6,7 @@ import emptyStarIcon from "../assets/empty-star.svg";
 // voir si NaN est toujours dans console
 
 export function Rate(props) {
-    const rate = Number(props.rating);
+    const rate = Number(props.value);
     const fullRate = [1, 2, 3, 4, 5];
 
     return (
