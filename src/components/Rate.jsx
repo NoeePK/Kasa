@@ -1,17 +1,21 @@
 import React from "react";
 import fullStarIcon from "../assets/full-star.svg";
 import emptyStarIcon from "../assets/empty-star.svg";
-// Utiliser la rate dans Rental.js
-// Utiliser une condition ?
-// voir si NaN est toujours dans console
 
+// 
 export function Rate(props) {
+    // Convertir la string rating en nombre
     const rate = Number(props.value);
+    // Nombre total d'étoiles
     const fullRate = [1, 2, 3, 4, 5];
 
     return (
         <div className="rate">
-            {/* Version du cours : */}
+            {/* Récupérer la note dans les props
+            SI : le nb d'étoile dans rate est 
+            ALORS : on affiche le même nb d'images que la valeur de rate
+            SINON : s'il reste des étoiles non-utilisées dans fullRate
+            ALORS : on affiche le nb d'étoiles qu'il manque pour atteindre les 5 attendues */}
             {fullRate.map((score) =>
                 rate >= score ? (
                     <img
