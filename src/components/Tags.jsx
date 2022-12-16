@@ -1,6 +1,5 @@
 import React from "react";
-// Utiliser "tags=" dans Rental.js
-// Passer "tags" en paramètre qui sera utilisé dans Rental pour afficher les bons tags
+// Pour chaque tag dans props, ajouter un élément li dans la liste
 
 export function Tags(props) {
     const tags = props.tags;
