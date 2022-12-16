@@ -41,8 +41,9 @@ export function Rental() {
                 {/* tags={Rental.tags} */}
             </div>
 
+{/* voir si NaN est toujours dans console */}
             <div className="rental-rating">
-                <Rate rate={Rental.rating} />
+                <Rate value={Number(Rental.rating)} />
             </div>
 
             <div className="rental-details">

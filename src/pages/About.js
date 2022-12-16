@@ -13,10 +13,9 @@ export default function About() {
             </div>
 
             <div className="content-container">
-                {AboutContent.map((index, array) => (
+                {AboutContent.map((array) => (
                     <Collapse
                         className="collapse-container"
-                        key={index}
                         title={array.title}
                         text={array.text}
                     />
