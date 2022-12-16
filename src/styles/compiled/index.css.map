@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../utils/_settings.scss","../components/_cards.scss","../layout/_header.scss","../layout/_navigation.scss","../utils/_variables.scss"],"names":[],"mappings":"AAAQ;ACAR;EACI;EACA;;;ACFJ;EACI;;;ACDJ;EACI,OCCS","file":"index.css"}
+{"version":3,"sourceRoot":"","sources":["../utils/_settings.scss","../components/_cards.scss","../components/_carrousel.scss","../layout/_header.scss","../layout/_navigation.scss","../utils/_variables.scss"],"names":[],"mappings":"AAAQ;ACAR;EACI;EACA;;;ACDA;EACI;;;ACFR;EACI;;;ACDJ;EACI,OCCS","file":"index.css"}

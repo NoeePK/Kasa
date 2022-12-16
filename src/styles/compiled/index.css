@@ -4,6 +4,10 @@
   width: 160px;
 }
 
+.arrow-right img, .arrow-left img {
+  background-color: black;
+}
+
 .logo {
   height: 20px;
 }

@@ -19,7 +19,7 @@ function Carrousel(props) {
     // On passe à la première (0)
     // SINON : on passe à la prochaine (+1)
     const nextSlide = () => {
-        setCurrent(current === -1 ? 0 : current + 1);
+        setCurrent(current === length -1 ? 0 : current + 1);
     };
 
     return (
