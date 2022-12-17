@@ -6,12 +6,11 @@ export function Footer() {
         <footer>
             <figure className="footerLogo">
                 <img
-                    className="logo"
                     src={logo}
                     alt="Logo de l'agence Kasa"
                 ></img>
             </figure>
-            <p className="footerCopyrights">© 2020 Kasa. All rights reserved</p>
+            <p>© 2020 Kasa. All rights reserved</p>
         </footer>
     );
 }

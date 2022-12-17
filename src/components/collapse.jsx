@@ -15,7 +15,6 @@ export default function Collapse(props) {
             <div className="collapse">
                 <div className="collapse-title" onClick={toggleIsOpen}>
                     <h2>{props.title}</h2>
-                    {/* Utiliser style pour changer chevrons selon la classe */}
                     <span
                         className={
                             toggleIsClosed ? "arrow_down" : "arrow_up"
