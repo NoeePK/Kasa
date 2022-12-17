@@ -3,10 +3,8 @@ import React from "react";
 const Banner = (props) => {
     return (
         <>
-            <figure className="banner-image">
-                <img src={props.source} alt="Paysage" />
-            </figure>
-            <figcaption className="banner-text">{props.text}</figcaption>
+            <img src={props.source} alt="Paysage"></img>
+            <h1>{props.text}</h1>
         </>
     );
 };
