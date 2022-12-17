@@ -41,7 +41,21 @@ footer figure {
   margin-top: 6.6rem;
 }
 
-nav Link {
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav a {
+  color: #FF6060;
+  font-size: 2.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding-left: 2.85rem;
+}
+nav a:hover {
+  text-decoration: underline;
   color: #FF6060;
 }
 
