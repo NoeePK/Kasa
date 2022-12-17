@@ -10,6 +10,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   margin: auto 10rem;
 }
 
@@ -101,6 +102,31 @@ nav a {
 nav a:hover {
   text-decoration: underline;
   color: #FF6060;
+}
+
+.content-container {
+  margin: 3rem auto;
+  width: 85%;
+  border-radius: 5px;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.error-container h1 {
+  color: #FF6060;
+  font-size: 3.6rem;
+  font-weight: 500;
+  margin-bottom: 18rem;
+}
+.error-container a {
+  color: #FF6060;
+  font-size: 1.8rem;
+  margin-bottom: 15rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,20 @@
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+
+    h1 {
+        color: $main-color;
+        font-size: 3.6rem;
+        font-weight: 500;
+        margin-bottom: 18rem;
+    }
+
+    a {
+        color: $main-color;
+        font-size: 1.8rem;
+        margin-bottom: 15rem;
+    }
+}

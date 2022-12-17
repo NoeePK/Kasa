@@ -2,7 +2,7 @@
 @import"utils/mixins";
 @import"utils/settings";
 @import"components/banners";
-@import"components/buttons";
+@import"components/collapse";
 @import"components/cards";
 @import"components/carrousel";
 @import"layout/header";
@@ -10,4 +10,5 @@
 @import"layout/navigation";
 @import"pages/home";
 @import"pages/rental";
+@import"pages/about";
 @import"pages/error";
