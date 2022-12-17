@@ -1,4 +1,31 @@
+.cards-container {
+    background-color: $background;
+    border-radius: 25px;
+    margin-top: 4.3rem;
+    padding: 5.6rem 5rem 0 5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    
+}
+
+.to-rental-link {
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, $main-color 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+
 .rental-cover {
-    height: 160px;
-    width: 160px;
+    border-radius: 10px;
+    object-fit: cover;
+    
+    
+}
+
+.figcaption {
+
 }

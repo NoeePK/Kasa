@@ -9,12 +9,9 @@ export function Card() {
                 <Link
                     className="to-rental-link"
                     to={`/Rental/${rental.id}`}
-                    key={rental.id}
-                >
-                    <figure>
-                        <img src={rental.cover} className="rental-cover" alt="" />
-                        <figcaption>{rental.title}</figcaption>
-                    </figure>
+                    key={rental.id}>
+                    <img src={rental.cover} className="rental-cover" alt="" />
+                    <h2>{rental.title}</h2>
                 </Link>
             ))}
         </>
