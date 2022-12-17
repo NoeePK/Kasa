@@ -8,13 +8,47 @@ width: 100%;
 .rental-details {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+    margin-bottom: 3rem;
 }
 
-.rental-title .rental-host {
-width: 50%;
+.rental-title {
+    color: $main-color;
+    font-weight: 500;
+
+    h1 {
+        font-size: 3.6rem;
+        margin-bottom: 0%;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        
+    }
 }
+
+.tags {
+    margin-left: -3rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+    
+
+    li {
+        color: white;
+        font-size: 1.4rem;
+        background-color: $main-color;
+        border-radius: 1rem;
+        padding: .5rem 3rem;
+        
+    }
+    
+}
+
+
+
 
 .rental-collapses {
     display: flex;

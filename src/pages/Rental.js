@@ -31,9 +31,7 @@ export function Rental() {
                     <div className="rental-title">
                         <h1>{Rental.title}</h1>
                         <h2>{Rental.location}</h2>
-                        <div className="rental-tags">
-                            <Tags tags={Rental.tags} />
-                        </div>
+                        <Tags tags={Rental.tags} />
                     </div>
 
                     <div className="rental-host">
@@ -48,20 +46,19 @@ export function Rental() {
                         </div>
                     </div>
                 </div>
+            </section>
 
-                <div className="rental-collapses">
-                    <Collapse title="Description" text={Rental.description} />
-                    {/* Vérifier si affichage liste fonctionne */}
-                    <Collapse
-                        title="Equipements"
-                        text={Rental.equipments}
-                        // <ul>
-                        //     {Rental.equipments.map((index, equipment) => (
-                        //         <li key={index}>{equipment}</li>
-                        //     ))}
-                        // </ul>
-                    />
-                </div>
+            <section className="rental-collapses">
+                <Collapse title="Description" text={Rental.description} />
+                {/* Vérifier si affichage liste fonctionne */}
+                <Collapse
+                    title="Equipements"
+                    text=<ul>
+                        {Rental.equipments.map((equipment) => (
+                            <li>{equipment}</li>
+                        ))}
+                    </ul>
+                />
             </section>
         </main>
     );
