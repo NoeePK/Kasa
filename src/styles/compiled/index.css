@@ -39,6 +39,42 @@ body {
   bottom: 69.04%;
 }
 
+.collapse {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.collapse-title, .collapse-text {
+  padding: 0 2.5rem;
+  border-radius: 5px;
+  font-size: 2.4rem;
+}
+
+.collapse-title {
+  background-color: #FF6060;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0%;
+}
+.collapse-title h2 {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: white;
+}
+
+.arrow_down {
+  transform: rotate(180deg);
+}
+
+.collapse-text {
+  color: #FF6060;
+  background-color: #F6F6F6;
+  font-weight: 400;
+  margin-top: 0%;
+  line-height: 3.4rem;
+}
+
 .cards-container {
   background-color: #F6F6F6;
   border-radius: 25px;
@@ -105,9 +141,8 @@ nav a:hover {
 }
 
 .content-container {
-  margin: 3rem auto;
-  width: 85%;
-  border-radius: 5px;
+  margin: 3rem auto 9rem auto;
+  width: 75%;
 }
 
 .error-container {

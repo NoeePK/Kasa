@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import arrow from "../assets/arrow-down.svg";
 
 export default function Collapse(props) {
     // Par default, le state est false, donc le collapse est fermé
@@ -15,12 +16,11 @@ export default function Collapse(props) {
             <div className="collapse">
                 <div className="collapse-title" onClick={toggleIsOpen}>
                     <h2>{props.title}</h2>
-                    <span
-                        className={
-                            toggleIsClosed ? "arrow_down" : "arrow_up"
-                        }></span>
+                    <img
+                        className={toggleIsClosed ? "arrow_down" : "arrow_up"}
+                        src={arrow}/>
                 </div>
-                {/* SI fermé, ALORS aria est caché */}
+                {/* SI fermé, ALORS p est caché */}
                 <div className="collapse-text">
                     <p hidden={toggleIsClosed ? false : true}>{props.text}</p>
                 </div>
