@@ -1,5 +1,28 @@
-.arrow-right, .arrow-left {
+.carrousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: 7rem auto 3rem auto;
+    border-radius: 2.5rem;
+}
+
+.carrousel {
     img {
-        background-color: black;
+        width: 100%;
+        border-radius: 2.5rem;
+        object-fit: fill;
     }
+}
+
+.arrow {
+    position: absolute;
+}
+
+.arrow-left {
+    left: 3%;
+}
+
+.arrow-right {
+    right: 3%;
 }

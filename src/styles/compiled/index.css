@@ -99,8 +99,31 @@ body {
   object-fit: cover;
 }
 
-.arrow-right img, .arrow-left img {
-  background-color: black;
+.carrousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 7rem auto 3rem auto;
+  border-radius: 2.5rem;
+}
+
+.carrousel img {
+  width: 100%;
+  border-radius: 2.5rem;
+  object-fit: fill;
+}
+
+.arrow {
+  position: absolute;
+}
+
+.arrow-left {
+  left: 3%;
+}
+
+.arrow-right {
+  right: 3%;
 }
 
 header {

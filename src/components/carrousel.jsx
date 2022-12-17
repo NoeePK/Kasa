@@ -24,19 +24,19 @@ function Carrousel(props) {
 
     return (
         <section className="carrousel-container">
-            <span className="arrow-left" onClick={previousSlide}>
+            <span className="arrow arrow-left" onClick={previousSlide}>
                 <img src={left} alt="previous"/>
             </span>
-            <span className="arrow-right" onClick={nextSlide}>
+            <span className="arrow arrow-right" onClick={nextSlide}>
                 <img src={right} alt="next"/>
             </span>
-            <>
+            <div className="carrousel">
                 {pictures.map((picture, index) => (
                     <div key={index} className={index}>
                         {index === current && <img src={picture} alt="" />}
                     </div>
                 ))}{" "}
-            </>
+            </div>
         </section>
     );
 }
