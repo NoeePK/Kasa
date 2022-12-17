@@ -1,0 +1,25 @@
+.rental-container {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.rental-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rental-title .rental-host {
+width: 50%;
+}
+
+.rental-collapses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+

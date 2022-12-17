@@ -23,7 +23,7 @@ function Carrousel(props) {
     };
 
     return (
-        <section className="carrousel-container">
+        <>
             <span className="arrow arrow-left" onClick={previousSlide}>
                 <img src={left} alt="previous"/>
             </span>
@@ -37,7 +37,7 @@ function Carrousel(props) {
                     </div>
                 ))}{" "}
             </div>
-        </section>
+        </>
     );
 }
 

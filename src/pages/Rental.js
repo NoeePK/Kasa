@@ -19,50 +19,51 @@ export function Rental() {
     if (!Rental) return <Error />;
 
     return (
-        <section className="rental-container" key={Rental.id}>
-            <Carrousel source={Rental.pictures} slidesNumber={Rental.pictures.length} />
-
-            <div className="rental-title">
-                <h1>{Rental.title}</h1>
-                <h2>{Rental.location}</h2>
-            </div>
-
-            <div className="rental-host">
-                <h2 className="host-name">{Rental.host.name}</h2>
-                <img
-                    className="host-picture"
-                    src={Rental.host.picture}
-                    alt="Propriétaire"
+        <main>
+            <section className="carrousel-container" key={Rental.id}>
+                <Carrousel
+                    source={Rental.pictures}
+                    slidesNumber={Rental.pictures.length}
                 />
-            </div>
+            </section>
+            <section className="rental-container">
+                <div className="rental-details">
+                    <div className="rental-title">
+                        <h1>{Rental.title}</h1>
+                        <h2>{Rental.location}</h2>
+                        <div className="rental-tags">
+                            <Tags tags={Rental.tags} />
+                        </div>
+                    </div>
 
-            <div className="rental-tags">
-                <Tags tags={Rental.tags} />
-            </div>
+                    <div className="rental-host">
+                        <h2 className="host-name">{Rental.host.name}</h2>
+                        <img
+                            className="host-picture"
+                            src={Rental.host.picture}
+                            alt="Propriétaire"
+                        />
+                        <div className="rental-rating">
+                            <Rate value={Rental.rating} />
+                        </div>
+                    </div>
+                </div>
 
-            <div className="rental-rating">
-                <Rate value={Rental.rating} />
-            </div>
-
-            <div className="rental-details">
-                <Collapse
-                    className="details"
-                    title="Description"
-                    text={Rental.description}
-                />
-                {/* Vérifier si affichage liste fonctionne */}
-                <Collapse
-                    className="details equiment"
-                    title="Equipements"
-                    text={Rental.equipments}
-                    // <ul>
-                    //     {Rental.equipments.map((index, equipment) => (
-                    //         <li key={index}>{equipment}</li>
-                    //     ))}
-                    // </ul>
-                />
-            </div>
-        </section>
+                <div className="rental-collapses">
+                    <Collapse title="Description" text={Rental.description} />
+                    {/* Vérifier si affichage liste fonctionne */}
+                    <Collapse
+                        title="Equipements"
+                        text={Rental.equipments}
+                        // <ul>
+                        //     {Rental.equipments.map((index, equipment) => (
+                        //         <li key={index}>{equipment}</li>
+                        //     ))}
+                        // </ul>
+                    />
+                </div>
+            </section>
+        </main>
     );
 }
 
