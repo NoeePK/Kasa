@@ -4,7 +4,8 @@
     flex-direction: column;
 }
 
-.collapse-title, .collapse-text {
+.collapse-title,
+.collapse-text {
     padding: 0 2.5rem;
     border-radius: 5px;
     font-size: 2.4rem;
@@ -15,7 +16,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 0%;
-    
 
     h2 {
         font-size: 2.4rem;

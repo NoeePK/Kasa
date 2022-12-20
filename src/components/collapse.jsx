@@ -18,13 +18,18 @@ export default function Collapse(props) {
                     <h2>{props.title}</h2>
                     <img
                         className={toggleIsClosed ? "arrow_down" : "arrow_up"}
-                        src={arrow}/>
+                        src={arrow}
+                    />
                 </div>
                 {/* SI fermé, ALORS p est caché */}
                 <div className="collapse-text ">
-                    <p hidden={toggleIsClosed ? false : true}
-                    className={toggleIsClosed ? "text-closed" : "text-open"}>
-                        {props.text}</p>
+                    <p
+                        hidden={toggleIsClosed ? false : true}
+                        className={
+                            toggleIsClosed ? "text-closed" : "text-open"
+                        }>
+                        {props.text}
+                    </p>
                 </div>
             </div>
         </>

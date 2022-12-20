@@ -46,7 +46,8 @@ body {
   flex-direction: column;
 }
 
-.collapse-title, .collapse-text {
+.collapse-title,
+.collapse-text {
   padding: 0 2.5rem;
   border-radius: 5px;
   font-size: 2.4rem;
@@ -82,9 +83,7 @@ body {
   margin-top: 4.3rem;
   padding: 5.6rem 5rem 0 5rem;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -92,11 +91,23 @@ body {
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  width: 35rem;
+  height: 35rem;
+  margin-bottom: 5rem;
   background: linear-gradient(180deg, #FF6060 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+.to-rental-link h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 0 2rem 2rem 2rem;
 }
 
 .rental-cover {
   border-radius: 10px;
+  width: 100%;
+  height: 80%;
   object-fit: cover;
 }
 
