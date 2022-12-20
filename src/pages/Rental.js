@@ -27,25 +27,18 @@ export function Rental() {
                 />
             </section>
             <section className="rental-container">
-                <div className="rental-details">
-                    <div className="rental-title">
-                        <h1>{Rental.title}</h1>
-                        <h2>{Rental.location}</h2>
-                        <Tags tags={Rental.tags} />
-                    </div>
-
-                    <div className="rental-host">
-                        <h2 className="host-name">{Rental.host.name}</h2>
-                        <img
-                            className="host-picture"
-                            src={Rental.host.picture}
-                            alt="Propriétaire"
-                        />
-                        <div className="rental-rating">
-                            <Rate value={Rental.rating} />
-                        </div>
-                    </div>
+                <div className="rental-title">
+                    <h1>{Rental.title}</h1>
+                    <h2>{Rental.location}</h2>
                 </div>
+                <div className="rental-host">
+                    <h2>{Rental.host.name}</h2>
+                    <img src={Rental.host.picture} alt="Propriétaire" />
+                </div>
+            </section>
+            <section className="rental-details">
+                <Tags tags={Rental.tags} />
+                <Rate value={Rental.rating} />
             </section>
 
             <section className="rental-collapses">

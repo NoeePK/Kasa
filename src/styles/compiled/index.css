@@ -166,27 +166,46 @@ nav a:hover {
 
 .rental-container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
+}
+
+.rental-title {
+  color: #FF6060;
+}
+.rental-title h1 {
+  font-size: 3.6rem;
+  margin-bottom: 0%;
+  font-weight: 500;
+}
+.rental-title h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.rental-host {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.rental-host h2 {
+  color: #FF6060;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: right;
+}
+.rental-host img {
+  border-radius: 50%;
+  height: 8rem;
 }
 
 .rental-details {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 3rem;
-}
-
-.rental-title {
-  color: #FF6060;
-  font-weight: 500;
-}
-.rental-title h1 {
-  font-size: 3.6rem;
-  margin-bottom: 0%;
-}
-.rental-title h2 {
-  font-size: 1.8rem;
 }
 
 .tags {
@@ -194,8 +213,7 @@ nav a:hover {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
 }
 .tags li {
   color: white;
@@ -209,6 +227,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 4rem;
 }
 
 .content-container {
