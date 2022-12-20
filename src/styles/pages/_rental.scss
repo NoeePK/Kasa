@@ -50,8 +50,6 @@
     margin-bottom: 3rem;
 }
 
-// Etoiles 30 30
-
 .tags {
     margin-left: -3.5rem;
     list-style-type: none;
@@ -84,19 +82,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-   
     margin-bottom: 4rem;
 
     .collapse {
         width: 47%;
-        
+
         ul {
             list-style-type: none;
             margin-left: -3rem;
         }
 
-        .collapse-text {
-            min-height: 35rem;
+        .collapse-text p {
+            min-height: 30rem;
         }
     }
 }

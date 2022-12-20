@@ -21,8 +21,10 @@ export default function Collapse(props) {
                         src={arrow}/>
                 </div>
                 {/* SI fermé, ALORS p est caché */}
-                <div className="collapse-text">
-                    <p hidden={toggleIsClosed ? false : true}>{props.text}</p>
+                <div className="collapse-text ">
+                    <p hidden={toggleIsClosed ? false : true}
+                    className={toggleIsClosed ? "text-closed" : "text-open"}>
+                        {props.text}</p>
                 </div>
             </div>
         </>

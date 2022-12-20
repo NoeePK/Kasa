@@ -250,8 +250,8 @@ nav a:hover {
   list-style-type: none;
   margin-left: -3rem;
 }
-.rental-collapses .collapse .collapse-text {
-  min-height: 35rem;
+.rental-collapses .collapse .collapse-text p {
+  min-height: 30rem;
 }
 
 .content-container {
