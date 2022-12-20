@@ -43,7 +43,6 @@ export function Rental() {
 
             <section className="rental-collapses">
                 <Collapse title="Description" text={Rental.description} />
-                {/* Vérifier si affichage liste fonctionne */}
                 <Collapse
                     title="Equipements"
                     text=<ul>

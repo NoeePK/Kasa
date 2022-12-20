@@ -105,7 +105,7 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 7rem auto 3rem auto;
+  margin: 7rem auto 1rem auto;
   border-radius: 2.5rem;
 }
 
@@ -187,7 +187,6 @@ nav a:hover {
 .rental-host {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
 }
 .rental-host h2 {
@@ -195,6 +194,10 @@ nav a:hover {
   font-size: 1.8rem;
   font-weight: 500;
   text-align: right;
+  line-height: 2.6rem;
+  height: 8rem;
+  width: 8rem;
+  padding: 1.5rem 1.2rem 1rem 0;
 }
 .rental-host img {
   border-radius: 50%;
@@ -214,6 +217,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 .tags li {
   color: white;
@@ -221,6 +225,16 @@ nav a:hover {
   background-color: #FF6060;
   border-radius: 1rem;
   padding: 0.5rem 3rem;
+  margin-right: 1rem;
+}
+
+.rate {
+  padding-left: 2rem;
+}
+.rate img {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 1rem;
 }
 
 .rental-collapses {
@@ -228,6 +242,16 @@ nav a:hover {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 4rem;
+}
+.rental-collapses .collapse {
+  width: 47%;
+}
+.rental-collapses .collapse ul {
+  list-style-type: none;
+  margin-left: -3rem;
+}
+.rental-collapses .collapse .collapse-text {
+  min-height: 35rem;
 }
 
 .content-container {
