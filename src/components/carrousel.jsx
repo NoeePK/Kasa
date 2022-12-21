@@ -19,16 +19,16 @@ function Carrousel(props) {
     // On passe à la première (0)
     // SINON : on passe à la prochaine (+1)
     const nextSlide = () => {
-        setCurrent(current === length -1 ? 0 : current + 1);
+        setCurrent(current === length - 1 ? 0 : current + 1);
     };
 
     return (
         <>
             <span className="arrow arrow-left" onClick={previousSlide}>
-                <img src={left} alt="previous"/>
+                <img src={left} alt="previous" />
             </span>
             <span className="arrow arrow-right" onClick={nextSlide}>
-                <img src={right} alt="next"/>
+                <img src={right} alt="next" />
             </span>
             <div className="carrousel">
                 {pictures.map((picture, index) => (
@@ -37,6 +37,9 @@ function Carrousel(props) {
                     </div>
                 ))}{" "}
             </div>
+            <span className="page-count">
+                    {current + 1}/{length}
+                </span>
         </>
     );
 }
