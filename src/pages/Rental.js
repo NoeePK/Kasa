@@ -30,17 +30,16 @@ export function Rental() {
                 <div className="rental-title">
                     <h1>{Rental.title}</h1>
                     <h2>{Rental.location}</h2>
+                    <Tags tags={Rental.tags} />
                 </div>
                 <div className="rental-host">
-                    <h2>{Rental.host.name}</h2>
-                    <img src={Rental.host.picture} alt="Propriétaire" />
+                    <div className="host">
+                        <h2>{Rental.host.name}</h2>
+                        <img src={Rental.host.picture} alt="Propriétaire" />
+                    </div>
+
+                    <Rate value={Rental.rating} />
                 </div>
-                
-                
-            </section>
-            <section className="rental-details">
-                <Tags tags={Rental.tags} />
-                <Rate value={Rental.rating} />
             </section>
 
             <section className="rental-collapses">

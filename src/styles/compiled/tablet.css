@@ -20,18 +20,40 @@
 
     .rental-title {
         order: 0;
+        flex-basis: 100%;
     }
 
     .rental-title h2 {
         font-size: 2.5rem;
     }
 
-    .rental-details {
+    .rental-host {
+        order: 1;
+        flex-basis: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .host {
+        flex-basis: 50%;
+    }
+
+    .host h2 {
         order: 1;
     }
 
-    .rental-host {
+    .host img {
         order: 2;
+    }
+
+    .rental-collapses {
+        flex-direction: column;
+    }
+
+    .rental-collapses .collapse {
+        width: 100%;
     }
 
     /* Page Erreur */

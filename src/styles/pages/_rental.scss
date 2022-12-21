@@ -7,6 +7,8 @@
 
 .rental-title {
     color: $main-color;
+    display: flex;
+    flex-direction: column;
 
     h1 {
         font-size: 3.6rem;
@@ -24,6 +26,16 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+.host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    flex-wrap: wrap;
 
     h2 {
         color: $main-color;
@@ -43,20 +55,11 @@
     }
 }
 
-.rental-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 3rem;
-}
-
 .tags {
     margin-left: -3.5rem;
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
 
     li {
         color: white;
@@ -82,6 +85,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 3rem;
     margin-bottom: 4rem;
 
     .collapse {

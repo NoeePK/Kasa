@@ -188,6 +188,8 @@ nav a:hover {
 
 .rental-title {
   color: #FF6060;
+  display: flex;
+  flex-direction: column;
 }
 .rental-title h1 {
   font-size: 3.6rem;
@@ -203,8 +205,18 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: right;
+  flex-wrap: wrap;
 }
-.rental-host h2 {
+
+.host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  flex-wrap: wrap;
+}
+.host h2 {
   color: #FF6060;
   font-size: 1.8rem;
   font-weight: 500;
@@ -214,16 +226,9 @@ nav a:hover {
   width: 8rem;
   padding: 1.5rem 1.2rem 1rem 0;
 }
-.rental-host img {
+.host img {
   border-radius: 50%;
   height: 8rem;
-}
-
-.rental-details {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-bottom: 3rem;
 }
 
 .tags {
@@ -231,8 +236,6 @@ nav a:hover {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
 }
 .tags li {
   color: white;
@@ -256,6 +259,7 @@ nav a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 3rem;
   margin-bottom: 4rem;
 }
 .rental-collapses .collapse {
@@ -280,6 +284,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 6rem;
+  margin-top: 40rem;
 }
 .error-container h1 {
   color: #FF6060;
