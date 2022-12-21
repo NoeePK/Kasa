@@ -1,0 +1,9 @@
+@media screen and (max-width: 745px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    header img {
+        flex-basis: 100%;
+    }
+}
