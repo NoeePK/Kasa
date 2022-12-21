@@ -1,0 +1,21 @@
+@media screen and (max-width: 1030px) {
+
+    /* Banner */
+    .banner-container {
+        height: 25rem;
+    }
+
+    .banner-container img {
+        height: 25rem;
+    }
+
+    /* Page About */
+    .content-container {
+        width: 100%;
+    }
+
+    /* Page Erreur */
+    .error-container h1 {
+        text-align: center;
+    }
+}
