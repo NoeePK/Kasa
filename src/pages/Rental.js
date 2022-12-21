@@ -35,6 +35,8 @@ export function Rental() {
                     <h2>{Rental.host.name}</h2>
                     <img src={Rental.host.picture} alt="Propriétaire" />
                 </div>
+                
+                
             </section>
             <section className="rental-details">
                 <Tags tags={Rental.tags} />
