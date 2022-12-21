@@ -1,9 +1,14 @@
 @media screen and (max-width: 1015px) {
-    header {
-        display: flex;
-        flex-direction: column;
+    nav a {
+        text-transform: uppercase;
     }
-    header img {
-        flex-basis: 100%;
+
+    .banner-container {
+        height: 45rem;
+    }
+
+    .banner-container img {
+        height: 45rem;
+        object-fit: cover;
     }
 }
