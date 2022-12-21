@@ -7,6 +7,7 @@ import App from "./App";
 import "./styles/compiled/index.css";
 import "./styles/compiled/tablet.css";
 import "./styles/compiled/mobile.css";
+import "./styles/compiled/small.css";
 
 const root_container = document.getElementById("root");
 const root = createRoot(root_container);

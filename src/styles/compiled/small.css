@@ -1,0 +1,22 @@
+@media screen and (max-width: 877px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header img {
+        width: 45rem;
+    }
+
+    nav {
+        margin-top: 5rem;
+    }
+
+    .banner-container {
+        height: 30rem;
+    }
+
+    .banner-container img {
+        height: 30rem;
+    }
+}
