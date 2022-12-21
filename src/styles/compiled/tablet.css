@@ -8,6 +8,26 @@
         height: 25rem;
     }
 
+    /* Home */
+    .cards-container {
+        background-color: white;
+        padding: 0;
+    }
+
+    .to-rental-link {
+        flex-basis: 100%;
+        height: auto;
+        padding: 2.5rem;
+    }
+
+    .to-rental-link h2 {
+        font-size: 3rem;
+    }
+
+    .rental-cover {
+        height: 85%;
+    }
+
     /* Page About */
     .content-container {
         width: 100%;
