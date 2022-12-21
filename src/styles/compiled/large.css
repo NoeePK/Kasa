@@ -1,0 +1,13 @@
+@media screen and (min-width: 1425px) {
+    .rental-container,
+    .rental-collapses,
+    header {
+        max-width: 1210px;
+        margin: auto;
+    }
+
+    header,
+    .rental-collapses {
+        margin-top: 3rem;
+    }
+}

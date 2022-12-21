@@ -5,6 +5,7 @@ import App from "./App";
 
 // Style applicable à TOUTE l'application
 import "./styles/compiled/index.css";
+import "./styles/compiled/large.css";
 import "./styles/compiled/tablet.css";
 import "./styles/compiled/mobile.css";
 import "./styles/compiled/small.css";
