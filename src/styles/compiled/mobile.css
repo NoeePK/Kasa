@@ -54,5 +54,66 @@
         font-size: 1.2rem;
     }
 
+    /* A propos */
+    .about-container .banner-container {
+        height: 23rem;
+    }
+
+    .about-container .banner-container img {
+        height: 23rem;
+        object-fit: cover;
+    }
+
+    /* Collapses */
+    .collapse-title h2 {
+        font-size: 1.3rem;
+    }
+
+    .collapse-text {
+        line-height: normal;
+        font-size: 1.3rem;
+        padding: 0 1rem;
+    }
+
+    /* Erreur */
+    .error-container {
+        margin-top: 15rem;
+    }
+
+    .error-logo {
+        height: 9rem;
+        width: 20rem;
+    }
+
+    .error-container h1 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
+    .error-container a {
+        font-size: 1.4rem;
+    }
+
+    /* Carrousel */
+    .carrousel-container,
+    .carrousel img {
+        width: 33rem;
+        height: 25rem;
+    }
+
+    .carrousel-container {
+        margin-top: 3rem;
+        margin-bottom: 0%;
+    }
+
+    .arrow img {
+        height: 2.5rem;
+    }
+
+    .page-count {
+        display: none;
+    }
+
+    /* Fiche logement */
     
 }

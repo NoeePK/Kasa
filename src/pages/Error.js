@@ -6,13 +6,9 @@ export function Error() {
     return (
         <section className="error-container">
             <img src={image} alt="404" className="error-logo" />
-            <h1 className="error-text">
-                Oups ! La page que vous demandez n'existe pas.
-            </h1>
+            <h1>Oups ! La page que vous demandez n'existe pas.</h1>
 
-            <Link to="/" className="to-home-link">
-                Retourner sur la page d'accueil
-            </Link>
+            <Link to="/">Retourner sur la page d'accueil</Link>
         </section>
     );
 }
