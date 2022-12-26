@@ -12,10 +12,10 @@ export function Rate(props) {
     return (
         <div className="rate">
             {/* Récupérer la note dans les props
-            SI : le nb d'étoile dans rate est 
-            ALORS : on affiche le même nb d'images que la valeur de rate
-            SINON : s'il reste des étoiles non-utilisées dans fullRate
-            ALORS : on affiche le nb d'étoiles qu'il manque pour atteindre les 5 attendues */}
+            SI : la valeur de rate est inférieure à la valeur maximale (fullRate)
+            ALORS : on affiche le même nb d'icones que la valeur de rate
+            SINON : FullRate - Rate est un nb positif
+            ALORS : on affiche le même nb d'icones qu'il manque pour atteindre les 5 attendues */}
             {fullRate.map((score) =>
                 rate >= score ? (
                     <img
