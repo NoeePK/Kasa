@@ -2,12 +2,7 @@
     /* Banner */
     .banner-container,
     .banner-container img {
-        height: 25rem;
-    }
-
-    .about-container .banner-container, .about-container .banner-container img {
-        height: 45rem;
-        object-fit: cover;
+        height: 30rem;
     }
 
     nav a {
