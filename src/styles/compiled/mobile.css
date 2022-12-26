@@ -25,10 +25,34 @@
         margin: 5% auto;
         border-radius: 1rem;
     }
+
     .banner-container h1 {
         font-size: 2.4rem;
         text-align: left;
         margin-left: 2rem;
         margin-right: 5rem;
     }
+
+    /* Cards */
+    .to-rental-link {
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+
+    .to-rental-link h2 {
+        padding: 0 4%;
+        font-size: 1.8rem;
+    }
+
+    .rental-cover {
+        height: 18rem;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    
 }
