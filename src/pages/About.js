@@ -12,7 +12,6 @@ export default function About() {
             <div className="banner-container">
                 <Banner source={aboutBanner} text={""} />
             </div>
-
             <div className="content-container">
                 {AboutContent.map((array) => (
                     <Collapse
