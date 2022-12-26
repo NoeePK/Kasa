@@ -115,5 +115,53 @@
     }
 
     /* Fiche logement */
-    
+    .rental-title h1 {
+        font-size: 1.8rem;
+    }
+
+    .rental-title h2 {
+        font-size: 1.4rem;
+    }
+
+    .tags {
+        flex-wrap: wrap;
+        margin-left: -4rem;
+    }
+
+    .tags li {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+    }
+
+    .rental-host {
+        margin-top: -3rem;
+    }
+
+    .host h2 {
+        font-size: 1.4rem;
+        line-height: normal;
+    }
+
+    .host img {
+        height: 4rem;
+        margin-top: -1rem;
+    }
+
+    .rate {
+        padding-left: 3rem;
+    }
+
+    .rate img {
+        height: 2rem;
+        margin-left: -0.5rem;
+    }
+
+    .rental-collapses {
+        margin-top: 0;
+    }
+
+    .rental-collapses .collapse .collapse-text p {
+        min-height: auto;
+    }
 }
