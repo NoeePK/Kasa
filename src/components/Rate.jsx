@@ -12,10 +12,12 @@ export function Rate(props) {
     return (
         <div className="rate">
             {/* Récupérer la note dans les props
-            BOUCLE : comparer chaque valeur dans fullRate avec la valeur de rate  
-            SI : la valeur de rate est supérieure ou égale à la valeur dans le tableau
-            ALORS (true) : on affiche une icone pleine
-            SINON (false) : on affiche une icone vide */}
+            BOUCLE : comparer chaque valeur dans l'array fullRate avec la valeur de rate  
+            CONDITION : la valeur de rate est supérieure ou égale à la valeur dans le tableau
+            TRUE : on passe à la valeur suivante dans l'array
+            On affiche une icone pleine selon la valeur atteinte dans le tableau
+            FALSE : (La valeur de rate est inférieure à la valeur dans le tableau)
+            On affiche une icone vide */}
             {fullRate.map((score) =>
                 rate >= score ? (
                     <img
