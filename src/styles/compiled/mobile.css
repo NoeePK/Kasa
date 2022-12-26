@@ -1,8 +1,4 @@
-@media screen and (max-width: 400px) {
-    body {
-        margin: 5%;
-    }
-
+@media screen and (max-width: 415px) {
     /* Header */
     header {
         margin: 0;
@@ -23,14 +19,11 @@
     .banner-container img {
         height: 12rem;
         margin: 5% auto;
-        border-radius: 1rem;
     }
 
     .banner-container h1 {
         font-size: 2.4rem;
         text-align: left;
-        margin-left: 2rem;
-        margin-right: 5rem;
     }
 
     /* Cards */
@@ -97,13 +90,12 @@
     /* Carrousel */
     .carrousel-container,
     .carrousel img {
-        width: 33rem;
+        width: 100%;
         height: 25rem;
     }
 
     .carrousel-container {
-        margin-top: 3rem;
-        margin-bottom: 0%;
+        margin: 3rem auto 0 auto;
     }
 
     .arrow img {
@@ -159,9 +151,5 @@
 
     .rental-collapses {
         margin-top: 0;
-    }
-
-    .rental-collapses .collapse .collapse-text p {
-        min-height: auto;
     }
 }
