@@ -1,14 +1,3 @@
-@media screen and (max-width: 1015px) {
-    nav a {
-        text-transform: uppercase;
-    }
-
-    .banner-container {
-        height: 45rem;
-    }
-
-    .banner-container img {
-        height: 45rem;
-        object-fit: cover;
-    }
+@media screen and (max-width: 400px) {
+    
 }

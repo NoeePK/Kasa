@@ -1,11 +1,17 @@
 @media screen and (max-width: 1030px) {
     /* Banner */
-    .banner-container {
+    .banner-container,
+    .banner-container img {
         height: 25rem;
     }
 
-    .banner-container img {
-        height: 25rem;
+    .about-container .banner-container, .about-container .banner-container img {
+        height: 45rem;
+        object-fit: cover;
+    }
+
+    nav a {
+        text-transform: uppercase;
     }
 
     /* Home */
@@ -17,7 +23,6 @@
     .to-rental-link {
         flex-basis: 100%;
         height: auto;
-        padding: 2.5rem;
     }
 
     .to-rental-link h2 {
@@ -26,6 +31,7 @@
 
     .rental-cover {
         height: 85%;
+        max-height: 30rem;
     }
 
     /* Page About */
@@ -34,6 +40,16 @@
     }
 
     /* Page Logement */
+    .carrousel-container,
+    .carrousel img {
+        width: 80rem;
+        height: 60rem;
+    }
+
+    .rate {
+        margin-left: -3rem;
+    }
+
     .rental-container {
         flex-direction: column;
     }
