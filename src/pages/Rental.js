@@ -5,9 +5,9 @@ import Rentals from "../datas/Rentals";
 // Importer les composants
 import Error from "../pages/Error";
 import Carrousel from "../components/Carrousel";
-import Collapse from "../components/Collapse";
 import Rate from "../components/Rate";
 import Tags from "../components/Tags";
+import Collapse from "../components/Collapse";
 
 export function Rental() {
     // Récupérer id dans URL
