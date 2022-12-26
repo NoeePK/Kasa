@@ -4,10 +4,12 @@
     header {
         max-width: 1210px;
         margin: auto;
+        margin-top: 3rem;
     }
 
-    header,
-    .rental-collapses {
-        margin-top: 3rem;
+    .carrousel-container,
+    .carrousel img {
+        width: 140rem;
+        height: 60rem;
     }
 }
