@@ -3,55 +3,7 @@
         margin-top: 1rem;
     }
 
-    /* Header */
-    header {
-        margin: 0;
-    }
-
-    header img {
-        height: 5rem;
-        width: 13rem;
-    }
-
-    nav a {
-        font-size: 1.2rem;
-        padding-left: 1rem;
-    }
-
-    /* Banner */
-    .banner-container,
-    .banner-container img {
-        height: 11rem;
-        margin: 5% auto;
-    }
-
-    .banner-container h1 {
-        font-size: 2.4rem;
-        text-align: left;
-    }
-
-    /* Cards */
-    .to-rental-link {
-        height: 25rem;
-        margin-bottom: 2rem;
-    }
-
-    .to-rental-link h2 {
-        padding: 0 4%;
-        font-size: 1.8rem;
-    }
-
-    .rental-cover {
-        height: 18rem;
-    }
-
-    /* Footer */
-    footer {
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    /* A propos */
+    /* Page : About */
     .about-container .banner-container {
         height: 20rem;
     }
@@ -61,18 +13,30 @@
         object-fit: cover;
     }
 
-    /* Collapses */
-    .collapse-title h2 {
-        font-size: 1.3rem;
+    /* Page : Rental */
+    .rental-title h1 {
+        font-size: 1.8rem;
     }
 
-    .collapse-text {
+    .rental-title h2 {
+        font-size: 1.4rem;
+    }
+
+    .rental-host {
+        margin-top: -3rem;
+    }
+
+    .host h2 {
+        font-size: 1.4rem;
         line-height: normal;
-        font-size: 1.3rem;
-        padding: 0 1rem;
     }
 
-    /* Erreur */
+    .host img {
+        height: 4rem;
+        margin-top: -1rem;
+    }
+
+    /* Page : Erreur */
     .error-container {
         margin-top: 15rem;
     }
@@ -91,7 +55,50 @@
         font-size: 1.4rem;
     }
 
-    /* Carrousel */
+    /* Composant : Header */
+    header {
+        margin: 0;
+    }
+
+    header img {
+        height: 5rem;
+        width: 13rem;
+    }
+
+    /* Composant : Navigation */
+    nav a {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+    }
+
+    /* Composant : Banner */
+    .banner-container,
+    .banner-container img {
+        height: 11rem;
+        margin: 5% auto;
+    }
+
+    .banner-container h1 {
+        font-size: 2.4rem;
+        text-align: left;
+    }
+
+    /* Composant : Card */
+    .to-rental-link {
+        height: 25rem;
+        margin-bottom: 2rem;
+    }
+
+    .to-rental-link h2 {
+        padding: 0 4%;
+        font-size: 1.8rem;
+    }
+
+    .rental-cover {
+        height: 18rem;
+    }
+
+    /* Composant : Carrousel */
     .carrousel-container,
     .carrousel img {
         width: 100%;
@@ -110,15 +117,32 @@
         display: none;
     }
 
-    /* Fiche logement */
-    .rental-title h1 {
-        font-size: 1.8rem;
+    /* Composant : Rate */
+    .rate {
+        padding-left: 3rem;
     }
 
-    .rental-title h2 {
-        font-size: 1.4rem;
+    .rate img {
+        height: 2rem;
+        margin-left: -0.5rem;
     }
 
+    /* Composant : Collapses */
+    .collapse-title h2 {
+        font-size: 1.3rem;
+    }
+
+    .collapse-text {
+        line-height: normal;
+        font-size: 1.3rem;
+        padding: 0 1rem;
+    }
+
+    .rental-collapses {
+        margin-top: 0;
+    }
+
+    /* Composant : Tags */
     .tags {
         flex-wrap: wrap;
         margin-left: -4rem;
@@ -130,30 +154,9 @@
         border-radius: 5px;
     }
 
-    .rental-host {
-        margin-top: -3rem;
-    }
-
-    .host h2 {
-        font-size: 1.4rem;
-        line-height: normal;
-    }
-
-    .host img {
-        height: 4rem;
-        margin-top: -1rem;
-    }
-
-    .rate {
-        padding-left: 3rem;
-    }
-
-    .rate img {
-        height: 2rem;
-        margin-left: -0.5rem;
-    }
-
-    .rental-collapses {
-        margin-top: 0;
+    /* Composant : Footer */
+    footer {
+        text-align: center;
+        font-size: 1.2rem;
     }
 }

@@ -1,15 +1,18 @@
 @media screen and (min-width: 1425px) {
+    /* Page : Rental */
     .rental-container,
     .rental-collapses {
         max-width: 1210px;
         margin: 3rem auto;
     }
 
+    /* Composant : Header */
     header {
         max-width: 140rem;
         margin: 0 auto;
     }
 
+    /* Composant : Carrousel */
     .carrousel-container,
     .carrousel img {
         width: 140rem;

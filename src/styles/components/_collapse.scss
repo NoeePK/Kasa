@@ -35,3 +35,24 @@
     margin-top: 0%;
     line-height: 3.4rem;
 }
+
+.rental-collapses {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
+    .collapse {
+        width: 47%;
+
+        ul {
+            list-style-type: none;
+            margin-left: -3rem;
+        }
+
+        .collapse-text p {
+            min-height: 30rem;
+        }
+    }
+}

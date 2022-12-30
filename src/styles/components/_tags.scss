@@ -1,0 +1,15 @@
+.tags {
+    margin-left: -3.5rem;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+    li {
+        color: white;
+        font-size: 1.8rem;
+        background-color: $main-color;
+        border-radius: 10px;
+        padding: 0.5rem 3rem;
+        margin-right: 1rem;
+    }
+}
