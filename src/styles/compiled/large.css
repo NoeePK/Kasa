@@ -1,15 +1,41 @@
 @media screen and (min-width: 1425px) {
+    body {
+        margin-top: 2%;
+    }
+
     /* Page : Rental */
-    .rental-container,
     .rental-collapses {
-        max-width: 1210px;
-        margin: 3rem auto;
+        margin: 4rem auto;
+    }
+
+    .rental-title h1 {
+        font-size: 5rem;
+        text-transform: uppercase;
+    }
+
+    .rental-title h2 {
+        font-size: 3.5rem;
+    }
+
+    .host h2 {
+        font-size: 2.8rem;
+        padding-right: 2rem;
+        margin-right: 3rem;
+    }
+
+    .host img {
+        height: 15rem;
     }
 
     /* Composant : Header */
-    header {
-        max-width: 140rem;
-        margin: 0 auto;
+    header img {
+        height: 10rem;
+    }
+
+    /* Composant : Navigation */
+    nav a {
+        font-size: 3.5rem;
+        text-transform: uppercase;
     }
 
     /* Composant : Carrousel */
@@ -17,5 +43,20 @@
     .carrousel img {
         width: 140rem;
         height: 60rem;
+    }
+
+    /* Composant : Tags */
+    .tags li {
+        font-size: 2.4rem;
+    }
+
+    /* Composant : Rate */
+    .rate {
+        padding-top: 3rem;
+    }
+
+    .rate img {
+        height: 4rem;
+        width: 4rem;
     }
 }
