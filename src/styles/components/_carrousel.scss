@@ -4,15 +4,18 @@
     justify-content: center;
     position: relative;
     margin: 7rem auto 1rem auto;
-    border-radius: 2.5rem;
     max-width: 124rem;
+}
+
+.carrousel-container,
+.carrousel img {
+    height: 50rem;
+    border-radius: 25px;
 }
 
 .carrousel {
     img {
-        height: 50rem;
         width: 124rem;
-        border-radius: 25px;
         object-fit: cover;
     }
 }
