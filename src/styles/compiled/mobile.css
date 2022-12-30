@@ -1,8 +1,8 @@
 @media screen and (max-width: 540px) {
-   body {
-    margin-top: 1rem;
-   }
-   
+    body {
+        margin-top: 1rem;
+    }
+
     /* Header */
     header {
         margin: 0;
