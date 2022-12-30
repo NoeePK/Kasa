@@ -1,4 +1,8 @@
 @media screen and (max-width: 540px) {
+   body {
+    margin-top: 1rem;
+   }
+   
     /* Header */
     header {
         margin: 0;
@@ -17,7 +21,7 @@
     /* Banner */
     .banner-container,
     .banner-container img {
-        height: 12rem;
+        height: 11rem;
         margin: 5% auto;
     }
 
@@ -49,11 +53,11 @@
 
     /* A propos */
     .about-container .banner-container {
-        height: 23rem;
+        height: 20rem;
     }
 
     .about-container .banner-container img {
-        height: 23rem;
+        height: 20rem;
         object-fit: cover;
     }
 
@@ -91,11 +95,11 @@
     .carrousel-container,
     .carrousel img {
         width: 100%;
-        height: 35rem;
+        height: 25rem;
     }
 
     .carrousel-container {
-        margin: 3rem auto 0 auto;
+        margin: 2rem auto 0 auto;
     }
 
     .arrow img {
@@ -123,7 +127,7 @@
     .tags li {
         font-size: 1.2rem;
         margin-bottom: 2rem;
-        border-radius: 0.5rem;
+        border-radius: 5px;
     }
 
     .rental-host {

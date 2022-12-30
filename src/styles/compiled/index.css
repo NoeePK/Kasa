@@ -26,12 +26,11 @@ body {
 }
 .banner-container img {
   width: 100%;
-  border-radius: 2.5rem;
+  border-radius: 25px;
   opacity: 0.65;
 }
 .banner-container h1 {
   color: white;
-  font-weight: 500;
   font-size: 4.8rem;
   text-align: center;
   position: absolute;
@@ -60,7 +59,6 @@ body {
 }
 .collapse-title h2 {
   font-size: 2.4rem;
-  font-weight: 500;
   color: white;
 }
 
@@ -121,7 +119,7 @@ body {
 .carrousel img {
   height: 50rem;
   width: 124rem;
-  border-radius: 2.5rem;
+  border-radius: 25px;
   object-fit: cover;
 }
 
@@ -198,11 +196,9 @@ nav a:hover {
 .rental-title h1 {
   font-size: 3.6rem;
   margin-bottom: 0%;
-  font-weight: 500;
 }
 .rental-title h2 {
   font-size: 2rem;
-  font-weight: 500;
 }
 
 .rental-host {
@@ -221,7 +217,6 @@ nav a:hover {
 .host h2 {
   color: rgb(255, 96, 96);
   font-size: 1.8rem;
-  font-weight: 500;
   text-align: right;
   line-height: 2.6rem;
   height: 8rem;
@@ -243,7 +238,7 @@ nav a:hover {
   color: white;
   font-size: 1.8rem;
   background-color: rgb(255, 96, 96);
-  border-radius: 1rem;
+  border-radius: 10px;
   padding: 0.5rem 3rem;
   margin-right: 1rem;
 }
@@ -291,7 +286,6 @@ nav a:hover {
 .error-container h1 {
   color: rgb(255, 96, 96);
   font-size: 3.6rem;
-  font-weight: 500;
   margin-bottom: 18rem;
 }
 .error-container a {

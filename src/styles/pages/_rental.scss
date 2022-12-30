@@ -13,12 +13,10 @@
     h1 {
         font-size: 3.6rem;
         margin-bottom: 0%;
-        font-weight: 500;
     }
 
     h2 {
         font-size: 2rem;
-        font-weight: 500;
     }
 }
 
@@ -34,12 +32,10 @@
     flex-direction: row;
     align-items: center;
     justify-content: right;
-    // flex-wrap: wrap;
 
     h2 {
         color: $main-color;
         font-size: 1.8rem;
-        font-weight: 500;
         text-align: right;
         line-height: 2.6rem;
         height: 8rem;
@@ -50,7 +46,6 @@
     img {
         border-radius: 50%;
         height: 8rem;
-        // C'est super petit comme image en respectant figma !!!
     }
 }
 
@@ -64,7 +59,7 @@
         color: white;
         font-size: 1.8rem;
         background-color: $main-color;
-        border-radius: 1rem;
+        border-radius: 10px;
         padding: 0.5rem 3rem;
         margin-right: 1rem;
     }
