@@ -45,7 +45,7 @@ export function Rental() {
             <section className="rental-collapses">
                 <Collapse title="Description" text={Rental.description} />
                 <Collapse
-                    title="Equipements"
+                    title="Équipements"
                     text=<ul>
                         {Rental.equipments.map((equipment) => (
                             <li>{equipment}</li>
