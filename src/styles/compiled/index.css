@@ -142,8 +142,11 @@ body {
   border-radius: 25px;
 }
 
+.carrousel {
+  width: 100%;
+}
 .carrousel img {
-  width: 124rem;
+  width: 100%;
   object-fit: cover;
 }
 

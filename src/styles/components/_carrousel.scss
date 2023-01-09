@@ -11,12 +11,12 @@
 .carrousel img {
     height: 50rem;
     border-radius: 25px;
-    
 }
 
 .carrousel {
+    width: 100%;
     img {
-        width: 124rem;
+        width: 100%;
         object-fit: cover;
     }
 }
