@@ -43,6 +43,7 @@
 
     .host img {
         order: 2;
+        height: 6rem;
     }
 
     /* Page : Erreur */
@@ -82,7 +83,6 @@
     /* Composant : Card */
     .to-rental-link {
         flex-basis: 100%;
-        height: auto;
         max-height: 30rem;
     }
 
@@ -93,18 +93,11 @@
     /* Composant : Carrousel */
     .carrousel-container,
     .carrousel img {
-        width: 100%;
-        height: 60rem;
+        height: 40rem;
     }
 
     .arrow img {
-        height: 6rem;
-    }
-
-    /* Composant : Rate */
-
-    .rate {
-        margin-left: -3rem;
+        height: 5rem;
     }
 
     /* Composant : Collapse */
