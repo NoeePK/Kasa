@@ -27,15 +27,9 @@
         height: 15rem;
     }
 
-    /* Composant : Header */
-    header img {
-        height: 10rem;
-    }
-
     /* Composant : Navigation */
     nav a {
         font-size: 3.5rem;
-        text-transform: uppercase;
     }
 
     /* Composant : Carrousel */
