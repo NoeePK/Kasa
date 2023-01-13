@@ -23,14 +23,14 @@ export default function Collapse(props) {
                 </div>
                 {/* SI fermé, ALORS p est caché */}
                 <div className="collapse-text ">
-                    <p
+                    <div
                         hidden={toggleIsClosed ? false : true}
                         className={
                             toggleIsClosed ? "text-open" :
                             "text-closed" 
                         }>
                         {props.text}
-                    </p>
+                    </div>
                 </div>
             </div>
         </>

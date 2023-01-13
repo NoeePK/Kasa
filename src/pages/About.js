@@ -18,6 +18,7 @@ export default function About() {
                         className="collapse-container"
                         title={array.title}
                         text={array.text}
+                        key={array.title}
                     />
                 ))}
             </div>

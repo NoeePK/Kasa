@@ -48,7 +48,7 @@ export function Rental() {
                     title="Équipements"
                     text=<ul>
                         {Rental.equipments.map((equipment) => (
-                            <li>{equipment}</li>
+                            <li key={equipment}>{equipment}</li>
                         ))}
                     </ul>
                 />

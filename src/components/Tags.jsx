@@ -5,7 +5,7 @@ export function Tags(props) {
     return (
         <ul className="tags">
             {tags.map((tag) => (
-                <li>{tag}</li>
+                <li key={tag}>{tag}</li>
             ))}
         </ul>
     );
