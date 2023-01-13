@@ -26,8 +26,7 @@ export default function Collapse(props) {
                     <div
                         hidden={toggleIsClosed ? false : true}
                         className={
-                            toggleIsClosed ? "text-open" :
-                            "text-closed" 
+                            toggleIsClosed ? "text-open" : "text-closed"
                         }>
                         {props.text}
                     </div>

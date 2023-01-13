@@ -109,7 +109,7 @@
         width: 100%;
     }
 
-    .rental-collapses .collapse .collapse-text p {
+    .rental-collapses .collapse .collapse-text div {
         min-height: auto;
     }
 }

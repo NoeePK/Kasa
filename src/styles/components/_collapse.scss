@@ -36,6 +36,11 @@
     line-height: 3.4rem;
 }
 
+.text-open,
+.text-closed {
+    padding: 2rem;
+}
+
 .rental-collapses {
     display: flex;
     flex-direction: row;
@@ -49,9 +54,11 @@
         ul {
             list-style-type: none;
             margin-left: -3rem;
+            margin-top: 0;
         }
 
-        .collapse-text div {
+        .text-open,
+        .text-closed {
             min-height: 30rem;
         }
     }
