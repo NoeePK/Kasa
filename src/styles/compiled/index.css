@@ -151,6 +151,7 @@ body {
 
 .carrousel {
   width: 100%;
+  margin: auto;
 }
 .carrousel img {
   width: 100%;
@@ -167,6 +168,11 @@ body {
 
 .arrow-right {
   right: 3%;
+}
+
+.no-arrow,
+.no-page-count {
+  content-visibility: hidden;
 }
 
 .page-count {

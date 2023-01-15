@@ -5,6 +5,8 @@ import right from "../assets/arrow-right.svg";
 function Carrousel(props) {
     const pictures = props.source;
     const length = props.slidesNumber;
+    const onePicture = length <= 1;
+
     // Définir l'index de la première slide
     const [current, setCurrent] = useState(0);
 
@@ -24,10 +26,14 @@ function Carrousel(props) {
 
     return (
         <>
-            <span className="arrow arrow-left" onClick={previousSlide}>
+            <span
+                className={onePicture ? "no-arrow" : "arrow arrow-left"}
+                onClick={previousSlide}>
                 <img src={left} alt="previous" />
             </span>
-            <span className="arrow arrow-right" onClick={nextSlide}>
+            <span
+                className={onePicture ? "no-arrow" : "arrow arrow-right"}
+                onClick={nextSlide}>
                 <img src={right} alt="next" />
             </span>
             <div className="carrousel">
@@ -37,9 +43,9 @@ function Carrousel(props) {
                     </div>
                 ))}{" "}
             </div>
-            <span className="page-count">
-                    {current + 1}/{length}
-                </span>
+            <span className={onePicture ? "no-page-count" : "page-count"}>
+                {current + 1}/{length}
+            </span>
         </>
     );
 }

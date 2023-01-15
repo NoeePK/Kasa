@@ -35,8 +35,13 @@
     /* Composant : Carrousel */
     .carrousel-container,
     .carrousel img {
-        width: 140rem;
-        height: 60rem;
+        min-width: 140rem;
+        max-width: 160rem;
+        height: 70rem;
+    }
+
+    .carrousel {
+        margin: 0 auto;
     }
 
     /* Composant : Tags */

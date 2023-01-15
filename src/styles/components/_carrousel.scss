@@ -15,6 +15,7 @@
 
 .carrousel {
     width: 100%;
+    margin: auto;
     img {
         width: 100%;
         object-fit: cover;
@@ -31,6 +32,11 @@
 
 .arrow-right {
     right: 3%;
+}
+
+.no-arrow,
+.no-page-count {
+    content-visibility: hidden;
 }
 
 .page-count {
