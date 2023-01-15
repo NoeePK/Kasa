@@ -1,36 +1,21 @@
-# Getting Started with Create React App
+# KASA
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Kasa permet la location d'appartements entre particuliers.
 
-## Available Scripts
+## Outils requis
 
-In the project directory, you can run:
+-   Create React App
+-   React Router
+-   Sass
 
-### `npm start`
+## Lancement de l'application
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Pour être en mesure de correctement faire tourner l'application, veuillez suivre les instructions suivantes :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   Clonez ce repository
+-   Dans le terminal, entrez la commande `npm start`
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   Le message suivant devrait apparaître :
+    -   Compiled successfully!
+    -   You can now view kasa in the browser.
+    -   Local: http://localhost:3000
