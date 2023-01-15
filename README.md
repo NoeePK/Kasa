@@ -16,6 +16,6 @@ Pour être en mesure de correctement faire tourner l'application, veuillez suivr
 -   Dans le terminal, entrez la commande `npm start`
 
 -   Le message suivant devrait apparaître :
-    -   Compiled successfully!
-    -   You can now view kasa in the browser.
-    -   Local: http://localhost:3000
+    -   `Compiled successfully!`
+    -   `You can now view kasa in the browser.`
+    -   `Local: http://localhost:3000`
