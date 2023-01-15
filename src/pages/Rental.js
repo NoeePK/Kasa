@@ -2,14 +2,13 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import Rentals from "../datas/Rentals";
 
-// Importer les composants
 import Error from "../pages/Error";
 import Carrousel from "../components/Carrousel";
 import Rate from "../components/Rate";
 import Tags from "../components/Tags";
 import Collapse from "../components/Collapse";
 
-export function Rental() {
+const Rental = () => {
     // Récupérer id dans URL
     const params = useParams();
     // Récupérer logement associé à l'id
@@ -55,6 +54,6 @@ export function Rental() {
             </section>
         </main>
     );
-}
+};
 
 export default Rental;

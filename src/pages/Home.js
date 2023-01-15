@@ -1,11 +1,9 @@
 import React from "react";
-
-// Importer les composants
 import Banner from "../components/Banner";
 import Card from "../components/Card";
 import homeBanner from "../assets/home-background.png";
 
-export function Home() {
+const Home = () => {
     return (
         <section className="home-container">
             <div className="banner-container">
@@ -19,6 +17,6 @@ export function Home() {
             </div>
         </section>
     );
-}
+};
 
 export default Home;

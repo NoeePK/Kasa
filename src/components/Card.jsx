@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Rentals from "../datas/Rentals";
 
-export function Card() {
+export const Card = () => {
     return (
         <>
             {Rentals.map((rental) => (
@@ -16,6 +16,6 @@ export function Card() {
             ))}
         </>
     );
-}
+};
 
 export default Card;

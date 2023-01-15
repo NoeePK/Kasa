@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import left from "../assets/arrow-left.svg";
 import right from "../assets/arrow-right.svg";
 
-function Carrousel(props) {
+const Carrousel = (props) => {
     const pictures = props.source;
     const length = props.slidesNumber;
     const onePicture = length <= 1;
@@ -48,6 +48,6 @@ function Carrousel(props) {
             </span>
         </>
     );
-}
+};
 
 export default Carrousel;

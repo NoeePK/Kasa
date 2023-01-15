@@ -2,8 +2,7 @@ import React from "react";
 import fullStarIcon from "../assets/full-star.svg";
 import emptyStarIcon from "../assets/empty-star.svg";
 
-//
-export function Rate(props) {
+const Rate = (props) => {
     // Convertir la string rating en nombre
     const rate = Number(props.value);
     // Nombre total d'étoiles
@@ -37,6 +36,6 @@ export function Rate(props) {
             )}
         </div>
     );
-}
+};
 
 export default Rate;

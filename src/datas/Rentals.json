@@ -22,7 +22,7 @@
             "Micro-Ondes",
             "Douche italienne",
             "Frigo",
-            "WIFI"
+            "Wi-fi"
         ],
         "tags": ["Batignolle", "Montmartre"]
     },
@@ -38,7 +38,7 @@
             "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-5.jpg",
             "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-1-6.jpg"
         ],
-        "description": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canal Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
+        "description": "Profitez du charme de la vie parisienne dans un magnifique appartement. À 3 minutes à pied du Canal Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
         "host": {
             "name": "Della Case",
             "picture": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
@@ -307,7 +307,7 @@
             "Lit",
             "Sèche Cheveux",
             "Wi-fi",
-            "TV",
+            "Télévision",
             "Bouilloire"
         ],
         "tags": ["Marais", "République", "Studio", "Proche Métros", "Commerces"]
@@ -362,7 +362,7 @@
             "Cuisine équipée",
             "Frigo",
             "Bouilloire",
-            "WIFI",
+            "Wi-fi",
             "Télévision",
             "Cintres",
             "Équipements de base"
@@ -392,8 +392,8 @@
             "SDB",
             "Cuisine équipée",
             "Frigo",
-            "WIFI",
-            "TV",
+            "Wi-fi",
+            "Télévision",
             "Cintres",
             "Four",
             "Micro-Ondes",

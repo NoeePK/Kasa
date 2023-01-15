@@ -1,17 +1,14 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 
-// Composants permanents
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-
-// Différentes pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Rental from "./pages/Rental";
 import Error from "./pages/Error";
 
-function App() {
+const App = () => {
     return (
         <div className="App">
             <Header />
@@ -24,6 +21,6 @@ function App() {
             <Footer />
         </div>
     );
-}
+};
 
 export default App;

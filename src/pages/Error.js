@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import image from "../assets/logo-error.png";
 
-export function Error() {
+const Error = () => {
     return (
         <section className="error-container">
             <img src={image} alt="404" className="error-logo" />
@@ -10,6 +10,6 @@ export function Error() {
             <Link to="/">Retourner sur la page d'accueil</Link>
         </section>
     );
-}
+};
 
 export default Error;
