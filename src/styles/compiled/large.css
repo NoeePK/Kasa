@@ -19,12 +19,11 @@
 
     .host h2 {
         font-size: 2.8rem;
-        padding-right: 2rem;
-        margin-right: 3rem;
+        margin-right: 6rem;
     }
 
     .host img {
-        height: 15rem;
+        height: 11rem;
     }
 
     /* Composant : Navigation */

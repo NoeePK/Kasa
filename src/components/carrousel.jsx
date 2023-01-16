@@ -43,7 +43,7 @@ const Carrousel = (props) => {
                     </div>
                 ))}{" "}
             </div>
-            <span className={onePicture ? "no-page-count" : "page-count"}>
+            <span className="page-count">
                 {current + 1}/{length}
             </span>
         </>
